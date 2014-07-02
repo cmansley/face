@@ -1,0 +1,1 @@
+find photos/ -name 001_*_head.jpg -exec cp --parents '{}' files \;

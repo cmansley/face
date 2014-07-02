@@ -1,0 +1,1 @@
+find photos -name [0-9][0-9][0-9]* -exec mv '{}' '{}'.jpg \;
