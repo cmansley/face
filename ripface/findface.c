@@ -82,7 +82,7 @@ void detect( IplImage* img, char *filename, char *work)
     // Detect the objects and store them in the sequence
     CvSeq* faces = cvHaarDetectObjects( img, cascade, storage,
                                         1.1, 2, CV_HAAR_DO_CANNY_PRUNING,
-                                        cvSize(40, 40) );
+                                        cvSize(40, 40), cvSize(0,0) );
 
     if(faces) {
 

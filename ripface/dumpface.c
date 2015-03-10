@@ -176,7 +176,7 @@ void detect_and_save( IplImage* img, char *dirname, int x, int y, int width, int
 
   // no blur image
   sprintf(outfile,"%s/%03d_%03d_head.jpg", dirname, num, 0);
-  cvSaveImage(outfile, faceimg);
+  cvSaveImage(outfile, faceimg, 0);
 
   // do loop to fillout blurring
   for(i=1; i<LVL; i++) {
@@ -188,7 +188,7 @@ void detect_and_save( IplImage* img, char *dirname, int x, int y, int width, int
     sprintf(outfile,"%s/%03d_%03d_head.jpg", dirname, num, i);
 
     // save blurred image
-    cvSaveImage(outfile, smoothimg);
+    cvSaveImage(outfile, smoothimg, 0);
   }
 
 
